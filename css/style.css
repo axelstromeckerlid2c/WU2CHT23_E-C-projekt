@@ -7,9 +7,9 @@
 
 body {
     display: grid;
-    height: 100vh;
+    height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto 100px;
+    grid-template-rows: 100px auto 200px;
     grid-template-areas:
     "hea"
     "mai"
@@ -44,35 +44,133 @@ ul {
     width: all;
 }
 
-.image_scroller {
-    background-color: green;
+#front_page {
     display: flex;
-    justify-content: space-evenly;
+    height: 100vh;
+    background-color: aqua;
     align-items: center;
-    height: 200px;
-    width: all;
+    justify-content: flex-end;
 }
+
+#place {
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    align-items: center;
+}
+
 
 .index_content {
     background-color: rgb(44, 190, 190);
     display: grid;
     justify-content: left;
     align-items: flex-end;
-    height: 250px;
+    height: 400px;
     width: 100%;
     margin-top: 100px;
     margin-bottom: 50px;
 }
 
+.image_scroller {
+    background-color: green;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: fit-content;
+    width: 98.7vw;
+}
+
 .index_image {
     display: inline;
     background-color: cornflowerblue;
-    height: 150px;
-    width: 200px;
+    height: 300px;
+    width: 280px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img {
+    height: 60px;
+    width: auto;
 }
 
 footer {
     grid-area: foo;
     background-color: brown;
     display: flex;
+}
+
+/*
+COUNTRIES
+*/
+
+#countries_grid {
+    grid-area: mai;
+}
+
+#countries_grid {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 300px 300px 300px 50px;
+    grid-template-areas:
+    "sec sec sec"
+    "ca1 ca2 ca3"
+    "ca4 ca5 ca6"
+    "ca7 ca8 ca9"
+    "cmo cmo cmo"
+    ;
+}
+
+#sec_header {
+    grid-area: sec;
+    background-color: rgb(0, 110, 255);
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    grid-area: car;
+    background-color: aqua;
+    height: all;
+    width: all;
+    margin: 10px;
+}
+
+#ca1 {
+    grid-area: ca1;
+}
+#ca2 {
+    grid-area: ca2;
+}
+#ca3 {
+    grid-area: ca3;
+}
+#ca4 {
+    grid-area: ca4;
+}
+#ca5 {
+    grid-area: ca5;
+}
+#ca6 {
+    grid-area: ca6;
+}
+#ca7 {
+    grid-area: ca7;
+}
+#ca8 {
+    grid-area: ca8;
+}
+#ca9 {
+    grid-area: ca9;
+}
+
+#see_more {
+    grid-area: cmo;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
 }

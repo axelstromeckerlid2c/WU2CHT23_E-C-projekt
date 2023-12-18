@@ -9,15 +9,17 @@
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h1 {
+h1 a {
+    color: black;
     font-size: 50px;
+    margin-left: 30px;
 }
 
 body {
     display: grid;
     height: auto;
     grid-template-columns: 1fr;
-    grid-template-rows: 100px auto 200px;
+    grid-template-rows: 100px auto 300px;
     grid-template-areas:
     "hea"
     "mai"
@@ -36,7 +38,7 @@ header {
 div {
     display: grid;
     grid-area: mai;
-    background-color: rgb(64, 63, 63);
+    background-color: rgb(52, 52, 52);
 }
 
 nav {
@@ -52,13 +54,17 @@ ul {
     justify-content: space-around;
     background-color: #3498db;
     width: all;
+    list-style: none;
+}
+
+nav a {
+    background-color: #3498db;
+    color: black;
+    font-size: 30px;
 }
 
 a {
-    background-color: #3498db;
     text-decoration: none;
-    color: black;
-    font-size: 30px;
 }
 
 #front_page {
@@ -72,21 +78,38 @@ a {
 }
 
 #place {
-    display: inline-block;
-    width: 200px;
-    height: 100px;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 300px;
+    height: 100%;
+    color: #ddd;
+    background: rgba(76, 140, 219, 0.7);
+    padding: 20px;
+    margin-right: 100px;
+}
+
+#place h2 {
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+
+#place p {
+    font-size: 30px;
 }
 
 .scroll_header {
-    background-color: rgb(61, 57, 57);
+    background-color: rgb(77, 77, 77);
+    color: #ddd;
     font-size: 40px;
     margin-left: 50px;
     margin: 20px;
+    width: fit-content;
 }
 
 .index_content {
-    background-color: rgb(64, 58, 58);
+    background-color: rgb(77, 77, 77);
     display: grid;
     justify-content: left;
     align-items: flex-end;
@@ -106,14 +129,22 @@ a {
 }
 
 .index_image {
-    display: inline;
-    background-color: cornflowerblue;
+    display: flex;
+    align-items: flex-end;
     height: 300px;
     width: 280px;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.index_image section {
+    color: #ddd;
+    width: 100%;
+    height: 30%;
+    background: rgba(76, 140, 219, 0.6);
+    padding: 20px;
 }
 
 img {
@@ -178,9 +209,28 @@ img:hover {
 
 footer {
     grid-area: foo;
-    background-color: brown;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    background: #3498db;
 }
+
+
+.about_us {
+    color: #ddd;
+    height: auto;
+    width: 400px;
+}
+
+.reach_us {
+    color: #ddd;
+}
+
+footer p {
+    margin-top: 30px;
+}
+
 
 /*
 COUNTRIES
@@ -211,20 +261,25 @@ COUNTRIES
     flex-direction: column;
 }
 
+.card_header {
+    color: #ddd;
+}
+
 .card {
     grid-area: car;
     display: flex;
     align-items: end;
-    background-color: aqua;
     height: all;
     width: all;
     margin: 10px;
-
 }
 
-.card section {
+.card .info {
+    color: #ddd;
     width: 100%;
+    height: 30%;
     background: rgba(76, 140, 219, 0.5);
+    padding: 20px;
 }
 
 #ca1_co {
@@ -261,7 +316,7 @@ COUNTRIES
 }
 #ca9_co {
     grid-area: ca9;
-    background-image: url(../img/spain.jpg);
+    background-image: url(../img/schweiz.jpg);
 }
 
 
@@ -349,10 +404,22 @@ COUNTRIES
     align-items: center;
 }
 
-.see_more p {
-    height: 40px;
-    font-size: 30px;
+.see_more a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 50px;
+    width: 200px;
+    font-size: 40px;
     background-color: #3498db;
+    color: black;
+    filter: opacity(0.7);
+    margin-bottom: 10px;
+}
+
+.see_more a:hover {
+    filter: opacity(1);
 }
 
 .card_header {
@@ -433,3 +500,42 @@ COUNTRIES
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+
+/*
+Bokningssida
+*/
+  
+.place_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.facts {
+    height: auto;
+    width: 600px;
+    margin: 100px;
+}
+
+.facts p {
+    font-size: 20px;
+    color: #ddd;
+    margin-top: 30px;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 150px;
+    margin: 0px 100px 100px 150px;
+    background-color: #3498db;
+}
+
+.book h2 {
+    font-size: 25px;
+    color: black;
+}

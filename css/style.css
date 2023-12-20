@@ -11,7 +11,7 @@
 
 h1 a {
     color: black;
-    font-size: 50px;
+    font-size: 1.85em;
     margin-left: 30px;
 }
 
@@ -35,10 +35,11 @@ header {
     justify-content: flex-start;
 }
 
-div {
+#main {
     display: grid;
     grid-area: mai;
     background-color: rgb(52, 52, 52);
+    padding-bottom: 100px;
 }
 
 nav {
@@ -60,7 +61,7 @@ ul {
 nav a {
     background-color: #3498db;
     color: black;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 a {
@@ -71,7 +72,6 @@ a {
     display: flex;
     height: 100vh;
     margin: 50px;
-    border-radius: 50px;
     align-items: center;
     justify-content: flex-end;
     background-image: url(../img/spain.jpg);
@@ -91,18 +91,18 @@ a {
 }
 
 #place h2 {
-    font-size: 70px;
+    font-size: 3.5em;
     margin-bottom: 30px;
 }
 
 #place p {
-    font-size: 30px;
+    font-size: 2em;
 }
 
 .scroll_header {
     background-color: rgb(77, 77, 77);
     color: #ddd;
-    font-size: 40px;
+    font-size: 2.5em;
     margin-left: 50px;
     margin: 20px;
     width: fit-content;
@@ -127,6 +127,7 @@ a {
     height: fit-content;
     width: 98.7vw;
 }
+
 
 .index_image {
     display: flex;
@@ -242,6 +243,8 @@ COUNTRIES
     display: grid;
     height: auto;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(52, 52, 52);
+    padding-bottom: 100px;
     grid-template-rows: 200px 300px 300px 300px 50px;
     grid-template-areas:
     "sec sec sec"
@@ -408,10 +411,9 @@ COUNTRIES
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
     height: 50px;
     width: 200px;
-    font-size: 40px;
+    font-size: 2.5em;
     background-color: #3498db;
     color: black;
     filter: opacity(0.7);
@@ -423,7 +425,7 @@ COUNTRIES
 }
 
 .card_header {
-    font-size: 70px;
+    font-size: 5em;
     margin: 20px;
 }
 
@@ -440,7 +442,7 @@ COUNTRIES
   /* Links inside the navbar */
   .navbar a {
     float: left;
-    font-size: 16px;
+    font-size: 1em;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -456,7 +458,7 @@ COUNTRIES
   
   /* Dropdown button */
   .dropdown .dropbtn {
-    font-size: 16px;
+    font-size: 1em;
     border: none;
     outline: none;
     color: white;
@@ -520,7 +522,7 @@ Bokningssida
 }
 
 .facts p {
-    font-size: 20px;
+    font-size: 1.5em;
     color: #ddd;
     margin-top: 30px;
 }
@@ -529,13 +531,13 @@ Bokningssida
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50px;
-    width: 150px;
+    height: 60px;
+    width: 175px;
     margin: 0px 100px 100px 150px;
     background-color: #3498db;
 }
 
 .book h2 {
-    font-size: 25px;
+    font-size: 2em;
     color: black;
 }
